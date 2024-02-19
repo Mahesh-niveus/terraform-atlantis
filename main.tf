@@ -28,7 +28,7 @@ resource "google_compute_instance" "default" {
   }
 
   network_interface {
-    network = "default"
+    subnetwork = "projects/prj-hotelogic-poc-01-22106/regions/asia-south1/subnetworks/sb-as1-ov-03"
     access_config {
       // Ephemeral public IP
     }
