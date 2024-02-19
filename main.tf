@@ -1,8 +1,4 @@
 terraform {
-  backend "gcs" {
-    bucket = "tekanaid-tf-state-prod"
-    prefix = "terraform/state"
-  }
   required_providers {
     google = {
       source  = "hashicorp/google"
