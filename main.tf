@@ -16,7 +16,7 @@ resource "google_compute_instance" "default" {
   name         = "test-vm"
   machine_type = "e2-micro"
   
-  zone         = var.zone
+  zone         = "asia-south1-c"
   tags = ["dev", "engineering"]
 
   boot_disk {
