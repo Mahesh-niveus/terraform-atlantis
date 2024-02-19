@@ -6,7 +6,6 @@ terraform {
     }
   }
 }
-
 provider "google" {
   project     = "prj-hotelogic-poc-01-22106"
   region      = "asia-south1"
