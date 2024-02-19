@@ -12,12 +12,12 @@ terraform {
 }
 
 provider "google" {
-  project     = var.project
-  region      = var.region
+  project     = "prj-hotelogic-poc-01-22106"
+  region      = "asia-south1"
 }
 
 resource "google_compute_instance" "default" {
-  name         = var.instance_name
+  name         = "test-vm"
   machine_type = "e2-micro"
   
   zone         = var.zone
