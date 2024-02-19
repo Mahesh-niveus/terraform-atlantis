@@ -12,7 +12,7 @@ provider "google" {
 }
 
 resource "google_compute_instance" "default" {
-  name         = "test-vm-33"
+  name         = "test-vm"
   machine_type = "e2-micro"
   
   zone         = "asia-south1-c"
@@ -28,7 +28,7 @@ resource "google_compute_instance" "default" {
   }
 
   network_interface {
-    network = "default"
+    subnetwork = "projects/prj-hotelogic-poc-01-22106/regions/asia-south1/subnetworks/sb-as1-ov-03"
     access_config {
       // Ephemeral public IP
     }
