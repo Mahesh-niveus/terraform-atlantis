@@ -1,9 +1,9 @@
 version: 3
 projects:
-- dir: .
+- dir: ./vm1
   name: production
   workflow: production
-- dir: .
+- dir: ./vm2
   name: staging
   workflow: staging
   terraform_version: v0.14.8
