@@ -12,7 +12,7 @@ provider "google" {
 }
 
 resource "google_compute_instance" "default" {
-  name         = "test-vm-123"
+  name         = "test-vm-02"
   machine_type = "e2-micro"
   
   zone         = "asia-south1-c"
